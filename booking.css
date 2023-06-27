@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    height: 106vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.navbare{
+    display: flex;
+   
+    align-items: center;
+    padding: 20px;
+    font-family: 'Poppins',sans-serif;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    
+    list-style: none;
+
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 100px;
+    position: relative;
+    margin-bottom: 150px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-style: 'Poppins', sans-serif;
+
+}
+.navbare ul  li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: cornflowerblue;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+
+}
+.logo{
+    font-weight: 4000px;
+}
+.navbare ul li:hover::after{
+    width: 100%;
+}
+.lack{
+    height: 640px;
+    width: 450px;
+    border: 3px solid cornflowerblue;
+    border-radius: 58px;
+    padding: 20px;
+    margin-bottom: 80vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-left: 400px;
+}
+.lack h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.lack hr{
+    padding: 2px;
+    background-color: cornflowerblue;
+    margin-left: 175px;
+    width: 60px; 
+    border-radius: 5px;
+    margin-top: 5px;
+}
+form input{
+    display: flex;
+    margin: 30px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid cornflowerblue;
+    
+}
+.bil{
+    padding: 5px 6px;
+    background: cornflowerblue;
+    width: 140px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    border: 2px solid cornflowerblue;
+    border-radius: 0px;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+    transition: 0.5s;
+
+}
+.bil:hover{
+    border-top-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.footer{
+    height: 46vh;
+    width: 100%;
+    background: black;
+    color: cornflowerblue;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 89px;
+}
+.coal img{
+    width: 136px ;
+    height: 136px;
+}
+/*Then we set the class and pad it*/
+.heat h1 {
+    
+    padding-top: 15px;
+    
+}
+.copyright{
+    text-align: center;
+    margin-top: 90px;
+
+} 
+@media only screen  and (max-width: 430px){
+    .navbare ul{
+        display: flex;
+        margin-top: 30px;
+        
+    }
+    .navbare ul li a{
+        font-size: 21px;
+    }
+    .lack{
+        margin-left: 19px;
+        width: 350px;
+        margin-top: 80px;
+    }
+    .lack hr{
+        margin-left: 120px;
+    }
+    .footer{
+        height: 46vh;
+        width: 100%;
+        background: black;
+        color: cornflowerblue;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 389px;
+    }
+}
+    
+
+
